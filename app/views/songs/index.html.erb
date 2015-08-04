@@ -1,0 +1,13 @@
+<div class="page-header">
+  <h1><%= link_to "FN Playlist", root_path %> <small>Knock over that swear jar</small></h1>
+  <%= image_tag("swearssmall.png") %>
+</div>
+<h3>Find explicit tracks by your favorite artist</h2>
+
+
+<%= form_tag artist_redirect_path, class: "form-horizontal" do %>
+  <div class="col-md-3">
+  <%= text_field_tag :artist, params[:artist], class: "col-md-1 form-control", placeholder: "Artist name" %>
+  </div>
+  <%= submit_tag 'Oh frak', class: "btn btn-danger" %>
+<% end %>

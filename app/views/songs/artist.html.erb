@@ -1,0 +1,9 @@
+<h1>Holy Shatner! <small>Lookit these results for <%= params[:artist] %>!</small></h1>
+
+<h3><%= link_to "Search again", root_path %></h3>
+
+<ul class="col-md-4 list-group">
+  <% @explicit_tracks.each do |track| %>
+  <li class="list-group-item"><%= track %></li>
+  <% end %>
+</ul>
